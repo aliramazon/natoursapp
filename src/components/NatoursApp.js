@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React, { Fragment } from 'react';
+import Header from './Header';
 
 const NatoursApp = () => (
-    <h1>I should appear here now</h1>
+    <Fragment>
+        <Header/>
+    </Fragment>
 );
 
 export default NatoursApp;
