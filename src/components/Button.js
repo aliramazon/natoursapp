@@ -5,7 +5,7 @@ class Button extends React.Component {
     render(){
         return (
             <a href="#"
-                className="btn btn-white"
+                className="btn btn-white btn-animated"
             >Discover our tours</a>
         );
     }
