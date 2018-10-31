@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import logoWhite from "../images/logo-white.png";
+import Button from './Button';
 
 const Header = () => (
     <Fragment>
@@ -12,6 +13,7 @@ const Header = () => (
                     <span className="heading-primary-main">Outdoors</span>
                     <span className="heading-primary-sub">is where life happens</span>
                 </h1>
+                <Button/>
             </div>
         </header>
     </Fragment>
