@@ -12,7 +12,10 @@ const Header = () => (
                 <span className="heading-primary--main">Outdoors</span>
                 <span className="heading-primary--sub">is where life happens</span>
             </h1>
-            <Button/>
+            <Button
+                className="btn btn--white btn--animated"
+                text="Discover our tours"
+            />
         </div>
     </header>
 );
