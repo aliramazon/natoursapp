@@ -6,3 +6,8 @@
         clear: both;
     }
 }
+
+// Card background
+@mixin card-background($color1, $color2, $opacity: 1, $image: null) {
+    background-image: linear-gradient(to right bottom, rgba($color1, $opacity), rgba($color2, $opacity)), $image;
+}
