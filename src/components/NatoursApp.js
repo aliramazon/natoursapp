@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 import About from './About';
-import Header from './Header';
 import Features from './Features';
+import Header from './Header';
+import Tours from './Tours';
+
 
 const NatoursApp = () => (
     <Fragment>
@@ -9,6 +11,7 @@ const NatoursApp = () => (
         <main>
             <About/>
             <Features/>
+            <Tours/>
         </main>
     </Fragment>
 );
