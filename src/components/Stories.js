@@ -3,8 +3,17 @@ import Story from './Story';
 import Button from './Button';
 import avatar1 from '../images/nat-8.jpg';
 import avatar2 from '../images/nat-9.jpg';
+import videoMp4 from '../images/video.mp4';
+import videoWebm from '../images/video.webm';
+
 const Stories = () => (
     <section className="section-stories">
+        <div className="bg-video">
+            <video className="bg-video__content" autoPlay muted loop>
+                <source src={videoMp4} type="video/mp4"/>
+                <source src={videoWebm} type="video/webm"/>
+            </video>
+        </div>
         <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
                 We make people genuinely happy
@@ -27,7 +36,7 @@ const Stories = () => (
         <div className="u-center-text u-margin-top-big">
             <Button
                 className="btn-text"
-                text="Learn more &rarr;"
+                text="Read all stories &rarr;"
             />
         </div>
     </section>

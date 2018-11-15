@@ -33,7 +33,7 @@ module.exports = (env) => {
                     ]
                 })
             },{
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                test: /\.(png|svg|jpg|jpeg|mp4|webm|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
