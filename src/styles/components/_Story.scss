@@ -19,16 +19,43 @@
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-3rem) skewX(12deg)
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
 
     }
 
     &__img {
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
     }
 
     &__text {
         transform: skewX(12deg);
     }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: $color-white;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    &:hover &__img {
+        filter: blur(2px) brightness(85%);
+        transform: translateX(-4rem) scale(1);
+    }   
 }
 
