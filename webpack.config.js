@@ -65,7 +65,11 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true,
+            hhistoryApiFallback: {
+                rewrites: [
+                    {from: /.*\.html/, to: '/index.html'}
+                ]
+            },
             publicPath: '/dist/'
         }
     };
