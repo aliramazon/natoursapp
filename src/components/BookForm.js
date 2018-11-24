@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Input, Radio } from './Inputs';
 
 class BookForm extends Component {
 
@@ -7,32 +8,44 @@ class BookForm extends Component {
         return(
             <form action="#" className="form">
                 <div className="form__group">
-                    <input 
-                        type="text" 
-                        className="form__input" placeholder="Full Name"
+                    <Input
+                        type="text"
                         id="name"
-                        required
+                        placeholder="Full name"
                     />
-                    <label 
-                        htmlFor="name"
-                        className="form__label"
-                    >
-                        Full name
-                    </label>
+                </div>
+
+                <div className="form__group">
+                    <Input
+                        type="email"
+                        id="email"
+                        placeholder="Email address"
+                    />
+                </div>
+
+                <div className="form__group u-margin-bottom-medium">
+                    <div className="form__radio-group">
+                        <Radio
+                            id="small"
+                            name="size"
+                            label="Small tour group"
+                        />
+                    </div>
+
+                    <div className="form__radio-group">
+                        <Radio
+                            id="large"
+                            name="size"
+                            label="Large tour group"
+                        />
+                    </div>
                 </div>
                 <div className="form__group">
-                    <input 
-                        type="email" 
-                        className="form__input" placeholder="Email address"
-                        id="email"
-                        required
-                    />
-                    <label 
-                        htmlFor="email"
-                        className="form__label"
+                    <button
+                        className="btn btn--green"    
                     >
-                        Email address
-                    </label>
+                        Next step &rarr;
+                    </button>
                 </div>
             </form>
         );
