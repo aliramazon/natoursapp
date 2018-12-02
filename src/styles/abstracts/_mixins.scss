@@ -11,3 +11,13 @@
 @mixin card-background($color1, $color2, $opacity: 1, $image: null) {
     background-image: linear-gradient(to right bottom, rgba($color1, $opacity), rgba($color2, $opacity)), $image;
 }
+
+
+// Center Horizontal-Vertical
+
+@mixin center-hor-ver($top: 50%, $left: 50%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}

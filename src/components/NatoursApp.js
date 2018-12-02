@@ -4,12 +4,14 @@ import Booking from './Booking';
 import Features from './Features';
 import Footer from './Footer';
 import Header from './Header';
+import Navigation from './Navigation';
 import Stories from './Stories';
 import Tours from './Tours';
 
 
 const NatoursApp = () => (
     <Fragment>
+        <Navigation/>
         <Header/>
         <main>
             <About/>

@@ -1,9 +1,12 @@
 import React from 'react';
 
-const NavLinks = ({ linksNames, listClass, itemClass, linkClass }) => {
-    console.log(linksNames);
-    
-    return (
+const NavLinks = ({ 
+    linksNames, 
+    listClass, 
+    itemClass, 
+    linkClass 
+}) => {
+        return (
         <ul className={listClass}>
             {linksNames.map((names, idx ) => (
                 <li 
