@@ -29,6 +29,7 @@
     "react-router-hash-link": "1.2.0",
     "redux": "4.0.0",
     "sass-loader": "7.1.0",
+    "txtgen": "2.2.2",
     "webpack": "4.16.5",
     "webpack-cli": "3.1.2"
   },

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import paragraph from '../txtgen/txtgen';
 const FeatureBox = (props) => (
     <div className="col-1-of-4">
         <div className="feature-box"> 
@@ -8,7 +8,7 @@ const FeatureBox = (props) => (
                 {props.heading}
             </h3>
             <p className="feature-box__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ratione sun the last breath cool.
+                {paragraph([5]).slice(0, 120)}!
             </p>
         </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import paragraph from '../txtgen/txtgen';
 const Story = ({ heading, img, name }) => (
     <div className="story">
         <figure className="story__shape">
@@ -13,7 +13,7 @@ const Story = ({ heading, img, name }) => (
                 {heading}
             </h3>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore illum in nostrum. Deleniti omnis maxime maiores eum blanditiis incidunt, non temporibus repellendus commodi fuga option.Deleniti omnis maxime maiores eum blanditiis incidunt, non temporibus repellendus commodi fuga option.
+                {paragraph([10]).slice(0, 305)}.
             </p>
         </div>
     </div>
