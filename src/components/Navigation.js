@@ -1,18 +1,9 @@
 import React from 'react';
 import NavLinks from './NavLinks';
-
+import NavIcon from './NavIcon'
 const Navigation = () => (
     <div className="navigation">
-        <input 
-            type="checkbox" 
-            id="navi-toggle" className="navigation__checkbox"
-        />
-        <label 
-            htmlFor="navi-toggle"
-            className="navigation__button"
-        >
-            <span className="navigation__icon">&nbsp;</span>
-        </label>
+        <NavIcon/>
         <div className="navigation__background">
             &nbsp;
         </div>
