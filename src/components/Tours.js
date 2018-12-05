@@ -3,7 +3,7 @@ import TourCard from './TourCard';
 import Button from './Button';
 
 const Tours = () => (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
         <div className="u-center-text u-margin-bottom-big">
             <h1 className="heading-secondary">
                 Most popular tours

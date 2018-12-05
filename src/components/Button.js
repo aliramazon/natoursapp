@@ -5,7 +5,7 @@ class Button extends React.Component {
     render(){
         return (
             <a 
-                href="#"
+                href={this.props.href ? this.props.href : '#'}
                 className={this.props.className}
             >
                 {this.props.text}

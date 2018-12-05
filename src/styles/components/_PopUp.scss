@@ -6,6 +6,10 @@
     left: 0;
     background-color: rgba($color-black, .8);
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
 
     &__content {
         @include center-hor-ver;
@@ -15,6 +19,9 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .4s .2s;
     }
 
     &__left {
@@ -28,6 +35,7 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        position: relative;
     }
 
     &__img {
@@ -52,5 +60,35 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+    }
+
+    // Open State
+
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }

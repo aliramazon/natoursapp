@@ -5,7 +5,7 @@ import nat9 from '../images/nat-9.jpg';
 import Button from './Button';
 
 const PopUp = () => (
-    <div className="popup">
+    <div className="popup" id="popup">
         <div className="popup__content">
             <div className="popup__left">
                 <img 
@@ -20,6 +20,11 @@ const PopUp = () => (
                 />
             </div>
             <div className="popup__right">
+                <a 
+                    href="#section-tours" className="popup__close"
+                >
+                    &times;
+                </a>
                 <h2 
                     className="heading-secondary u-margin-bottom-small"
                 >

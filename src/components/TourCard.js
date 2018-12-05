@@ -37,6 +37,7 @@ const TourCard = ({ heading, modifier, list, price }) => (
                 <Button
                     className="btn btn--white"
                     text="Book now"
+                    href="#popup"
                 />
             </div>
         </div>
