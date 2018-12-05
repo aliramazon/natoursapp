@@ -5,6 +5,7 @@ import Features from './Features';
 import Footer from './Footer';
 import Header from './Header';
 import Navigation from './Navigation';
+import PopUp from './PopUp';
 import Stories from './Stories';
 import Tours from './Tours';
 
@@ -19,6 +20,7 @@ const NatoursApp = () => (
             <Tours/>
             <Stories/>
             <Booking/>
+            <PopUp/>
         </main>
         <Footer/>
     </Fragment>
