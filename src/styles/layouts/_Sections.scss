@@ -27,6 +27,10 @@
         transform: skewY(7deg);
     }
 
+    @include respond(tablet-portrait) {
+        padding: 10rem 0;
+    }
+
 }
 
 
