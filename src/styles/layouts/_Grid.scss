@@ -6,6 +6,14 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond(tablet-portrait){
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include respond(tablet-portrait){
+        max-width: 50rem;
     }
 
     @include clearfix;
@@ -16,6 +24,15 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tablet-portrait){
+                margin-right: 0 !important;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(tablet-portrait){
+            width: 100% !important;
         }
     }
 
