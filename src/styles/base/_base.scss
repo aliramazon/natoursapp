@@ -11,12 +11,7 @@
 html {
     // this defines what 1rem is
     font-size: 62.5%; // 1rem = 10px
-  
-    
-    @include respond(desktop-big) {
-        font-size: 75%; // 1rem = 12px
-    }
-    
+      
     @include respond(tablet-landscape) {
         font-size: 56.25%; // 1rem = 9px
     }
@@ -28,8 +23,17 @@ html {
     @include respond(phone) {
         font-size: 37.5%; // 1rem = 6px
     }
+
+    @include respond(desktop-big) {
+        font-size: 75%; // 1rem = 12px
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tablet-portrait) {
+        padding: 0;
+    }
 }
