@@ -149,7 +149,7 @@
 
 
 
-    @include respond(tablet-portrait) {
+    @include respond(tablet-landscape) {
         // FUNCTIONALITY
         height: auto;
         border-radius: 3px; 
