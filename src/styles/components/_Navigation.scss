@@ -22,7 +22,10 @@
             right: 3rem;
         }
 
-        
+        @include respond(phone) {
+            height: 5rem;
+            width: 5rem;
+        }
 
     }
 
@@ -40,6 +43,11 @@
         @include respond(tablet-portrait) {
             top: 3.5rem;
             right: 3.5rem;
+        }
+
+        @include respond(phone) {
+            height: 4rem;
+            width: 4rem;
         }
     }
 
@@ -117,6 +125,10 @@
             height: 2px;
             background-color: $color-grey-dark-3;
             display: inline-block;
+        }
+
+        @include respond(phone) {
+            margin-top: 2.5rem;
         }
 
         &::before,

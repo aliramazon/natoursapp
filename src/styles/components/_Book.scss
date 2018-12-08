@@ -6,13 +6,37 @@
         transparent 50%),
         url(../images/nat-10.jpg);
     background-size: cover;
-    height: 50rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    @include respond(tablet-landscape) {
+        background-image: linear-gradient(
+            105deg,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 70%,
+            transparent 70%),
+            url(../images/nat-10.jpg);
+    }
+
+    @include respond(tablet-portrait) {
+        background-image: linear-gradient(
+            rgba($color-white, .9),
+            rgba($color-white, .9)),
+            url(../images/nat-10.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tablet-landscape) {
+            width: 70%;
+        }
+
+        @include respond(tablet-portrait) {
+            width: 100%;
+            padding: 3rem;
+        }
     }
 }
 
@@ -34,6 +58,10 @@
         width: 90%;
         display: block;
         transition: all .3s;
+
+        @include respond(tablet-portrait) {
+            width: 100%;
+        }
 
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
@@ -69,6 +97,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(tablet-portrait){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-label {
@@ -92,6 +125,10 @@
         position: absolute;
         left: 0;
         top: -.4rem;
+
+        @include respond(phone) {
+            top: -.8rem;
+        }
 
 
         &::after {
