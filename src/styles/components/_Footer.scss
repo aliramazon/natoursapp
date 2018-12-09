@@ -10,17 +10,18 @@
 
     &__logo-box {
         text-align: center;
+        margin-bottom: 4rem;
     }
 
     &__logo {
         width: 15rem;
         height: auto;
-        margin-bottom: 8rem;
+        
 
         @include respond(tablet-portrait) {
-            margin-bottom: 4rem;
             width: 10rem;
         }
+
     }
 
     &__navigation {
