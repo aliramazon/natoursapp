@@ -1,9 +1,14 @@
 import React from 'react';
 import Button from './Button';
 import paragraph from '../txtgen/txtgen';
-import nat1 from '../images/nat-1-large.jpg';
-import nat2 from '../images/nat-2-large.jpg';
-import nat3 from '../images/nat-3-large.jpg';
+import nat1Large from '../images/nat-1-large.jpg';
+import nat2Large from '../images/nat-2-large.jpg';
+import nat3Large from '../images/nat-3-large.jpg';
+
+import nat1Small from '../images/nat-1.jpg';
+import nat2Small from '../images/nat-2.jpg';
+import nat3Small from '../images/nat-3.jpg';
+import mapAgeCleaner from 'map-age-cleaner';
 
 const About = () => {
     return (
@@ -33,13 +38,36 @@ const About = () => {
                        className="btn-text"
                        text="Learn more &rarr;"
                   />
+
                    
                </div>
                <div className="col-1-of-2">
                    <div className="composition">
-                       <img src={nat1} alt="Photo-1" className="composition__photo composition__photo--p1"/>
-                       <img src={nat2} alt="Photo-2" className="composition__photo composition__photo--p2"/>
-                       <img src={nat3} alt="Photo-3" className="composition__photo composition__photo--p3"/>
+
+                        <img 
+                            srcSet={`${nat1Small} 300w, ${nat1Large} 1000w`}
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt='Phote-1'
+                            className="composition__photo composition__photo--p1"
+                            src={nat1Large}
+                        />
+
+                        <img 
+                            srcSet={`${nat2Small} 300w, ${nat2Large} 1000w`}
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt='Phote-1'
+                            className="composition__photo composition__photo--p2"
+                            src={nat2Large}
+                        />
+
+
+                        <img 
+                            srcSet={`${nat3Small} 300w, ${nat3Large} 1000w`}
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt='Phote-1'
+                            className="composition__photo composition__photo--p3"
+                            src={nat3Large}
+                        />
                    </div> 
                </div>
            </div>

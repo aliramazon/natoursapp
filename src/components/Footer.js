@@ -16,6 +16,7 @@ const Footer = () => (
                 <img 
                     srcSet={`${footerLogo1x} 1x, ${footerLogo2x} 2x`}
                     alt="Logo"
+                    src={footerLogo2x}
                 />
             </picture>
         </div>
