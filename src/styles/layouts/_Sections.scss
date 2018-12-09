@@ -7,6 +7,10 @@
     @include respond(tablet-portrait) {
         padding: 20rem 0;
     }
+
+    @include respond(phone) {
+        padding: 25rem 0;
+    }
 }
 
 //Features section
