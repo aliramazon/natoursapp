@@ -1,15 +1,23 @@
 import React from 'react';
 import NavLinks from './NavLinks';
-import footerLogo from '../images/logo-green-2x.png';
+import footerLogo2x from '../images/logo-green-2x.png';
+import footerLogo1x from '../images/logo-green-1x.png';
+import footerLogoSmall1x from '../images/logo-green-small-1x.png';
+import footerLogoSmall2x from '../images/logo-green-small-2x.png'
 
 const Footer = () => (
     <footer className="footer">
         <div className="footer__logo-box">
-            <img 
-                src={footerLogo} 
-                alt="Logo"
-                className="footer__logo"
-            />
+            <picture className="footer__logo">
+                <source
+                    srcSet={`${footerLogoSmall1x} 1x, ${footerLogoSmall2x} 2x`}
+                    media="(max-width: 37.5em)"
+                />
+                <img 
+                    srcSet={`${footerLogo1x} 1x, ${footerLogo2x} 2x`}
+                    alt="Logo"
+                />
+            </picture>
         </div>
         <div className="row">
             <div className="col-1-of-2">
