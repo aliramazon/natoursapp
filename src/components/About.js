@@ -46,7 +46,7 @@ const About = () => {
 
                         <img 
                             srcSet={`${nat1Small} 300w, ${nat1Large} 1000w`}
-                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt='Phote-1'
                             className="composition__photo composition__photo--p1"
                             src={nat1Large}
@@ -54,7 +54,7 @@ const About = () => {
 
                         <img 
                             srcSet={`${nat2Small} 300w, ${nat2Large} 1000w`}
-                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt='Phote-1'
                             className="composition__photo composition__photo--p2"
                             src={nat2Large}
@@ -63,7 +63,7 @@ const About = () => {
 
                         <img 
                             srcSet={`${nat3Small} 300w, ${nat3Large} 1000w`}
-                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt='Phote-1'
                             className="composition__photo composition__photo--p3"
                             src={nat3Large}
