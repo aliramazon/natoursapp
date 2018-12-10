@@ -5,6 +5,6 @@
 ##### ```yarn install``` , ```yarn build:dev```
 ##### Finally,  ```yarn run dev-server```
 
-##### To view live click ```[http://natoursapp.herokuapp.com]```
+##### To view live click [here](http://natoursapp.herokuapp.com)
 
 ###### Design belongs to ***Jonas Schmedtmen***
