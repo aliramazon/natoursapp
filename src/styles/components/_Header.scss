@@ -2,17 +2,21 @@
 
 // Header Background
 .header {
-    height: 95vh;
+    height: 85vh;
     @include headerImg('../images/hero-small.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh;
+    }
 
-    @media (min-resolution: 192dpi) 
-        and (min-width: 37.5em),
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             (min-width: 125em) {
         @include headerImg('../images/hero.jpg');
     }
