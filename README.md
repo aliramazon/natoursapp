@@ -1,9 +1,10 @@
 # Natours
 
-#### The main goal of this project is to create Responsive website using the power of React and SCSS. 
+##### The main goal of this project is to create Responsive website using the power of React and SCSS, Webpack.
 
-#### By the time full README is available, you can start it by 
-#### ```yarn install``` , ```yarn build:dev```
-#### Finally,  ```yarn run dev-server```
+##### ```yarn install``` , ```yarn build:dev```
+##### Finally,  ```yarn run dev-server```
+
+##### To view live click ``` [here](http://natoursapp.herokuapp.com/) ```
 
 ###### Design belongs to ***Jonas Schmedtmen***
